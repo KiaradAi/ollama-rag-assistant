@@ -1,8 +1,9 @@
-﻿version: '3.8'
+﻿version: "3.8"
 
 services:
   rag-assistant:
     build: .
+    container_name: ollama-rag-assistant
     ports:
       - "8501:8501"
     volumes:
@@ -10,3 +11,4 @@ services:
       - ./chroma_db:/app/chroma_db
     environment:
       - OLLAMA_HOST=http://host.docker.internal:11434
+    restart: unless-stopped
