@@ -1,0 +1,12 @@
+﻿version: '3.8'
+
+services:
+  rag-assistant:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./source_documents:/app/source_documents
+      - ./chroma_db:/app/chroma_db
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
