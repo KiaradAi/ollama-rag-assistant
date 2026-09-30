@@ -1,9 +1,7 @@
 ﻿version: "3.8"
-
 services:
   rag-assistant:
     build: .
-    container_name: ollama-rag-assistant
     ports:
       - "8501:8501"
     volumes:
