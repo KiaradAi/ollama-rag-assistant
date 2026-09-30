@@ -1,0 +1,20 @@
+langchain
+langchain-community
+langchain-huggingface
+langchain-ollama
+langchain-chroma
+streamlit
+ollama
+chromadb
+sentence-transformers
+torch
+transformers
+accelerate
+pypdf
+python-docx
+pytesseract
+Pillow
+pymupdf
+PyMuPDF # Explicitly add PyMuPDF 
+beautifulsoup4 # For HTML parsing
+lxml # Recommended parser for BeautifulSoup 
